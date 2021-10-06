@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(Raleway/Raleway-Italic-VariableFont_wght.ttf);
+    src: url(Raleway/Raleway-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+    font-family: 'Raleway';
+}
+/*header*/
+
+#Bloc1header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#logo img
+{
+    width: 50%;
+    height: 70%;
+}
+
+#Navigation
+{
+   
+    text-align: right;
+    align-items: baseline;
+
+}
+
