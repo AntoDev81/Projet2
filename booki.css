@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
 }
-
 @font-face {
     font-family: 'Raleway';
     src: url(Raleway/Raleway-Italic-VariableFont_wght.ttf);
@@ -12,11 +11,10 @@
 body
 {
     font-family: 'Raleway';
-    background-color: cornflowerblue;
+    
 }
 /*header*/
-
-.Bloc-1-header{
+.bloc-1-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,7 +23,6 @@ body
 .little-logo img{
     width: 5%;
     height: 10%;
-   
 }
 .little-logo
 {
@@ -38,8 +35,6 @@ li :hover
 {
     color: black;
 }
-
-}
 ul
 {
     list-style-type: none;
@@ -47,10 +42,7 @@ ul
 li{ 
     display: inline-block;
     margin: 25px;
-
 }
-
-
 a{
     color: #0065fc;
     text-decoration: none;
@@ -70,6 +62,40 @@ a{
 h1{
     font-size: 15px;
 }
-p{
-    font-size: 10px;
+h2{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bloc-2-header{
+    background-color: yellow;
+}
+.search{
+    display: inline-flex;
+    border-radius: 10px; 
+}
+.iconsize{
+    display:flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    width: 35px;
+    height: 35px;
+}
+.town{
+    border: solid;
+    border-right: none;
+    border-color: #F2F2F2;
+    border-width: 0,2px;
+    height: 35px;
+    width: 180px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+}
+.button{
+    border-radius: 0px 10px 10px 0px;
+    height: 35px;
+    width: 120px;
+    font-weight: bold;
+    cursor: pointer;
 }
