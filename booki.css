@@ -11,18 +11,18 @@
 body
 {
     font-family: 'Raleway';
-    
 }
 /*header*/
 .bloc-1-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 10px;
     background-color: coral;
 }
 .little-logo img{
-    width: 5%;
-    height: 10%;
+    width: 3%;
+    height: 5%;
 }
 .little-logo
 {
@@ -33,7 +33,7 @@ body
 }
 li :hover
 {
-    color: black;
+    color: #0065fc;
 }
 ul
 {
@@ -44,7 +44,7 @@ li{
     margin: 25px;
 }
 a{
-    color: #0065fc;
+    color: black;
     text-decoration: none;
 }
 .button{
@@ -61,11 +61,13 @@ a{
 }
 h1{
     font-size: 15px;
+    margin-left: 10px;
 }
 h2{
     text-decoration: none;
     font-size: 12px;
     font-weight: normal;
+    margin-left: 10px;
 }
 .bloc-2-header{
     background-color: yellow;
@@ -73,6 +75,7 @@ h2{
 .search{
     display: inline-flex;
     border-radius: 10px; 
+    margin-left: 10px;
 }
 .iconsize{
     display:flex;
@@ -80,6 +83,7 @@ h2{
     background-color: #f2f2f2;
     width: 35px;
     height: 35px;
+    border-radius:10px 0px 0px 10px ;
 }
 .town{
     border: solid;
@@ -91,11 +95,55 @@ h2{
     text-align: center;
     line-height: 25px;
     font-weight: bold;
+    font-size: 11px;
 }
 .button{
     border-radius: 0px 10px 10px 0px;
     height: 35px;
-    width: 120px;
+    width: 90px;
     font-weight: bold;
+    font-size: 12px;
     cursor: pointer;
+}
+/*Filtres*/
+.margfiltre{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.title3{
+    font-size: 11px;
+    margin-right: 10px; 
+    margin-left: 10px; 
+    line-height: 5px;
+}
+.iconborder{
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    color: #0065fc;
+    background-color: #deebff;
+}
+.bordertxt .filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.blocfilter{
+    display: flex;
+    align-content: center;
+}
+.bordertxt{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border: #F2F2F2 1px solid;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    height: 30px;
+    width: 170px;
+    font-size: 11px;
+    font-weight: bold;    
 }
