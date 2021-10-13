@@ -110,6 +110,10 @@ h2{
     margin-top: 30px;
     margin-bottom: 40px;
 }
+.blocfilter{ /*Bloc de la ligne complete*/
+    display: flex;
+    align-content: center;
+}
 .title3{
     font-size: 11px;
     margin-right: 10px; 
@@ -120,20 +124,17 @@ h2{
     border-radius: 20px;
     width: 40px;
     height: 40px;
+    margin-right: 10px;
+    font-size: 16px; /*taille des logos font-awesome*/
     color: #0065fc;
     background-color: #deebff;
 }
-.bordertxt .filter{
+.bordertxt .filter{ /* Positionnement des logos */
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-.blocfilter{
-    display: flex;
-    align-content: center;
-}
-.bordertxt{
+.bordertxt{ /*Textes et Bordures dans les filtres*/
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -142,8 +143,25 @@ h2{
     margin-left: 10px;
     margin-bottom: 10px;
     padding-right: 15px;
-    height: 30px;
-    width: 170px;
+    height: 35px;
+    width: auto;
     font-size: 11px;
-    font-weight: bold;    
+    font-weight: bold;
+}
+.iconborder:hover{
+    color: #F2F2F2;
+    background-color: #0065fc;
+}
+.xxx{
+    display: flex;
+    flex-direction: row;
+}
+.subtittle{
+    display: flex;
+background-color: chartreuse;
+}
+.iconinfo{
+    display: flex;
+    background-color: brown;
+    justify-content: center;
 }
