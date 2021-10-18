@@ -359,6 +359,9 @@ body
     font-family: 'Raleway' 'sans-sherif';
 }
 /*header*/
+header{
+  margin-bottom: 15px;
+}
 .bloc-1-header{
     display: flex;
     flex-direction: row;
@@ -410,8 +413,11 @@ a{
     border-radius: 2px;
 }
 h1{
+    display: flex;
+    justify-content: space-between;
     font-size: 15px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 h2{
     text-decoration: none;
@@ -527,12 +533,140 @@ h2{
     border: #F2F2F2 solid 1px;
     border-radius: 10px;
     text-align:center;
-    
 }
 .result{/*conteneur texte*/
     margin-right: 10px;
     margin-left: 10px;
 }
+                  /* Partie hébergements à marseille*/
+
+.firstsection{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}                
+.house{
+  display: flex;
+  flex-direction:row;
+}
+.hebergements{
+  background-color: whitesmoke;
+  width: 65%;
+  margin-right: 30px;
+  margin-left: 20px;
+  border-radius: 8px;
+}
+.proposition{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: auto;
+  height: auto;
+}
+.stickers{
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  width: 30%;
+  height: 150%;
+  margin-top: 15px;
+}
+.littlesticker{
+  width: 95%;
+  height: 55%;
+  margin-left: 5px;
+  margin-top: 2px;
+  border-radius: 15px 15px 0px 0px;
+}
+h4{
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+p{
+  font-size: 11px;
+  margin-left: 8px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+.iconstar{
+  font-size: 8px;
+  margin-left: 8px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+.opaque{
+  color: #0065fc;
+}
+.white{
+  color:#f2f2f2;
+}
+h5{
+  font-size: 12px;
+  font-weight: bold;
+}
+.more{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+.stickers2{
+  display: flex;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  width: 95%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.littlesticker2{
+  width: 35%;
+  height: auto;
+  margin-left: 2.5px;
+  margin-top: 5px;
+  border-radius: 15px 0px 0px 15px;
+}
+.mostpopular{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color:whitesmoke;
+  width: 30%;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+.txt2{/*fond du texte*/
+  border-radius: 0px 10px 10px 0px;
+  width: 50%;
+  margin-top: 5px;
+}
+.proposition2{
+  display: flex;
+  flex-direction: column;
+}
+.img1 {
+  width: 100%;
+  height: 50%;
+}
+.img6{
+  width: 80%;
+  height: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*Adaptation Mobile et Tablette*/
 @media screen and (max-width: 992px) {
     .bloc-1-header{
