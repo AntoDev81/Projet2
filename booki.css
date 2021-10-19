@@ -382,6 +382,7 @@ header{
 }
 nav{
   margin-top: 10px;
+  margin-right: 15px;
   font-size: 15px;
 }
 li :hover
@@ -417,7 +418,7 @@ h1{
     justify-content: space-between;
     font-size: 15px;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 40px;
 }
 h2{
     text-decoration: none;
@@ -522,7 +523,7 @@ h2{
     margin-left: 10px;
     background-color: chartreuse;
 }
-.iconinfo{/*conteneur logo info*/
+.iconi{/*conteneur logo info*/
     display: flex;
     justify-content: center;
     background-color: white;
@@ -539,7 +540,6 @@ h2{
     margin-left: 10px;
 }
                   /* Partie hébergements à marseille*/
-
 .firstsection{
   width: 100%;
   display: flex;
@@ -548,33 +548,27 @@ h2{
 }                
 .house{
   display: flex;
-  flex-direction:row;
 }
 .hebergements{
   background-color: whitesmoke;
-  width: 65%;
+  width: 75%;
   margin-right: 30px;
-  margin-left: 20px;
+  margin-left: 15px;
   border-radius: 8px;
 }
 .proposition{
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: auto;
-  height: auto;
 }
 .stickers{
   background-color: white;
   border-radius: 10px 10px 10px 10px;
   width: 30%;
-  height: 150%;
   margin-top: 15px;
 }
 .littlesticker{
   width: 95%;
-  height: 55%;
   margin-left: 5px;
   margin-top: 2px;
   border-radius: 15px 15px 0px 0px;
@@ -605,7 +599,7 @@ p{
   color:#f2f2f2;
 }
 h5{
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
 }
 .more{
@@ -617,16 +611,16 @@ h5{
   display: flex;
   background-color: white;
   border-radius: 10px 10px 10px 10px;
-  width: 95%;
+  width: 90%;
   margin-top: 15px;
   margin-bottom: 10px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .littlesticker2{
   width: 35%;
-  height: auto;
   margin-left: 2.5px;
-  margin-top: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   border-radius: 15px 0px 0px 15px;
 }
 .mostpopular{
@@ -639,7 +633,9 @@ h5{
   border-radius: 8px;
 }
 .txt2{/*fond du texte*/
-  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
   margin-top: 5px;
 }
@@ -647,13 +643,101 @@ h5{
   display: flex;
   flex-direction: column;
 }
-.img1 {
-  width: 100%;
-  height: 50%;
+
+      /*Conteneur Activités*/
+.seconsection{
+  display: flex;
 }
-.img6{
-  width: 80%;
-  height: 10%;
+.titlesecondsection{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.activities{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.stickers3{
+  background-color:#f2f2f2;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+}
+.littlesticker3{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+  border-radius: 15px 15px 0px 0px;
+}
+.up1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.up2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+h6{
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-block-end: -6px;
+}
+      /* Footer*/
+.footer{
+  display: flex;
+}
+.blocfooter{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  
+}
+.first{
+  display: flex;
+  flex-direction: column;
+  margin-right: 220px;
+  margin-bottom: 18px;
+}
+.tittlefoot1{
+  margin-left: 27px;
+}
+.txtfoot1{
+  margin-left: 20px;
+}
+.second{
+  display: flex;
+  flex-direction: column;
+  margin-right: 220px;
+  margin-bottom: 18px;
+}
+.tittlefoot2{
+  margin-left: 27px;
+}
+.txtfoot2{
+  margin-left: 20px;
+}
+.third{
+  display: flex;
+  flex-direction: column;
+  margin-right: 220px;
+  margin-bottom: 18px;
+}
+.tittlefoot3{
+  margin-left: 27px;
+}
+.txtfoot3{
+  margin-left: 20px;
 }
 
 
@@ -698,15 +782,19 @@ h5{
       width: 30%;
       height: 30%;
   }
-  li :hover{
+  ul :hover{
     color: #0065fc;
     border-bottom: solid 3px;
   }
   nav{
+    display: flex;
     text-align: center;
     background-color: darkgrey;
 
     font-size: 30px;
+  }
+  ul{
+    display: flex;
   }
   li{
     display: inline-block;
@@ -740,13 +828,13 @@ h5{
   }
 .subtittle{
   font-size: 22px;
-}
+  }
 .iconinfo{
     font-size: 15px;
     width: 40px;
     height: 40px;
     border-radius: 50px 50px 50px 50px;
-}
+  }
 .result{
   margin:10px;
 }
