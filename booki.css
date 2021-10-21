@@ -358,7 +358,7 @@ body
 {
     font-family: 'Raleway' 'sans-sherif';
 }
-/*header*/
+            /*header*/
 header{
   margin-bottom: 15px;
 }
@@ -385,12 +385,15 @@ nav{
   margin-right: 15px;
   font-size: 15px;
 }
-li :hover
-{
+.list{
+  display: flex;
+  flex-direction: row;
+}
+li :hover{
     color: #0065fc;
 }
-ul
-{
+ul{
+    display: flex;
     list-style-type: none;
 }
 li{ 
@@ -407,32 +410,43 @@ a{
     color: white ;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 10px;
     font-weight: normal;
     font-family: "Raleway";
     border-radius: 2px;
 }
+.button2{
+    display: none;
+}
+.buttonposition2{
+    display: none;
+}
 h1{
     display: flex;
     justify-content: space-between;
     font-size: 15px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-right: 40px;
 }
 h2{
     text-decoration: none;
     font-size: 12px;
     font-weight: normal;
-    margin-left: 10px;
+    margin-left: 17px;
 }
 .bloc-2-header{
     background-color: yellow;
 }
 .search{
-    display: inline-flex;
     border-radius: 10px; 
-    margin-left: 10px;
+    height: 100%;
+    margin-left: 12px;
+}
+.filtres{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 9px;
 }
 .iconsize{
     display:flex;
@@ -444,6 +458,7 @@ h2{
     border-radius:10px 0px 0px 10px ;
 }
 .town{
+    display: flex;
     border: solid;
     border-right: none;
     border-color: #F2F2F2;
@@ -456,6 +471,7 @@ h2{
     font-size: 11px;
 }
 .button{
+    display: flex;
     border-radius: 0px 10px 10px 0px;
     height: 35px;
     width: 90px;
@@ -467,6 +483,7 @@ h2{
 .margfiltre{
     margin-top: 20px;
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 .blocfilter{ /*Bloc de la ligne complete*/
     display: flex;
@@ -514,7 +531,7 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: normal;
-    margin-top: none;
+    margin-left: 5px;
 }
 .subtittle{ /*texte*/
     display: flex;
@@ -548,14 +565,18 @@ h2{
 }                
 .house{
   display: flex;
-  flex-direction: row
+  flex-direction: row;
+  width: 100%;
 }
 .hebergements{
   background-color: whitesmoke;
   width: 75%;
   margin-right: 30px;
-  margin-left: 15px;
+  margin-left: 10px;
   border-radius: 8px;
+}
+.hebergementstxt{
+  margin-left: 10px;
 }
 .proposition{
   display: flex;
@@ -569,6 +590,7 @@ h2{
   margin-top: 15px;
 }
 .littlesticker{
+  height: 90px;
   width: 95%;
   margin-left: 5px;
   margin-top: 2px;
@@ -619,6 +641,7 @@ h5{
 }
 .littlesticker2{
   width: 35%;
+  height: 90px;
   margin-left: 2.5px;
   margin-top: 2px;
   margin-bottom: 2px;
@@ -668,17 +691,64 @@ h5{
   margin-bottom: 5px;
   padding-bottom: 20px;
 }
-.littlesticker3{
+.vieuxport{
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 2px;
   border-radius: 15px 15px 0px 0px;
+  display: flex;
+  height: 95%;
+  width: 270px;
+}
+.fort{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+  border-radius: 15px 15px 0px 0px;
+  height: 175px;
+  width: 270px;
+}
+.frioul{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+  border-radius: 15px 15px 0px 0px;
+  height: 130px;
+  width: 270px;
+}
+.calanques{
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+  border-radius: 15px 15px 0px 0px;
+  height: 95%;
+  width: 270px;
+}
+.lagarde{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+  border-radius: 15px 15px 0px 0px;
+  height: 130px;
+  width: 270px;
+}
+.longchamp{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+  border-radius: 15px 15px 0px 0px;
+  height: 175px;
+  width: 270px;
 }
 .up1{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  
+}
+.up11{
+  display: flex;
+  margin-bottom: 30px;
 }
 .up2{
   display: flex;
@@ -686,17 +756,18 @@ h5{
   align-items: center;
   justify-content: space-between;
 }
+.up21{
+  display: flex;
+  margin-bottom: 30px;
+}
 h6{
   font-size: 12px;
   font-weight: bold;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 20px;
   margin-block-end: -6px;
 }
       /* Footer*/
-.footer{
-  display: flex;
-}
 .blocfooter{
   display: flex;
   flex-direction: row;
@@ -707,11 +778,13 @@ h6{
 .first{
   display: flex;
   flex-direction: column;
+  width: auto;
   margin-right: 220px;
   margin-bottom: 18px;
 }
 .tittlefoot1{
   margin-left: 27px;
+  margin-bottom: -10px;
 }
 .txtfoot1{
   margin-left: 20px;
@@ -724,6 +797,7 @@ h6{
 }
 .tittlefoot2{
   margin-left: 27px;
+  margin-bottom: -10px;
 }
 .txtfoot2{
   margin-left: 20px;
@@ -736,6 +810,7 @@ h6{
 }
 .tittlefoot3{
   margin-left: 27px;
+  margin-bottom: -10px;
 }
 .txtfoot3{
   margin-left: 20px;
@@ -768,31 +843,36 @@ h6{
     .imgbooki{
       width: 30%;
       height: 30%;
-      margin-left: 40px;
-  }
-    li :hover{
+      margin-left: 45px;
+    }
+    .right :hover{
+      color: #0065fc;
+      border-bottom: solid 3px;
+    }
+    .left :hover{
       color: #0065fc;
       border-bottom: solid 3px;
     }
     nav{
       display: flex;
-      width: 100%;
       justify-content: center;
-      margin-right: 0px;
+      width: 100%;
       background-color: darkgrey;
       font-size: 30px;
+      margin-right: 0px;
     }
     ul{
       display: flex;
-      justify-content: space-evenly;
       padding-left: 0px;
+    }
+    .list{
+      display: flex;
     }
     li{
       display: inline-block;
-      background-color: darkgreen;
     }
     a{
-      font-size: 35px;
+      font-size: 30px;
     }
     h1{
       display: flex;
@@ -802,12 +882,56 @@ h6{
       font-size: 35px;
     }
     h2{
-      text-align: center;
-      font-size: 25px;
+      font-size: 22px;
     }
+    /*bouton de recherches viles*/
     .search{
       display: flex;
       justify-content: center;
+    }
+    .iconsize{
+      height: 60px;
+      width: 60px;
+      font-size: 25px;
+    }
+    .town{
+      height: 50px;
+      width: auto;
+      font-size: x-large;
+      text-align: start;
+      line-height: 50px;
+      padding-left: 10px;
+    }
+    .button{
+      display: none;
+    }
+    .button2{
+      height: 60px;
+      width: 60px;
+      border-radius: 18px;
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #0065fc;
+      color: white ;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .buttonposition2{
+      display: flex;
+    }
+    .buttonposition{
+      display: none;
+    }
+    .filtres{
+      flex-direction: column;
+      align-items: baseline;
+    }
+    .iconborder{
+      height: 60px;
+      width: 60px;
+      border-radius: 30px;
     }
     .blocfilter{
       display: flex;
@@ -816,9 +940,16 @@ h6{
       align-content: flex-start;
     }
     .bordertxt{ /*Textes et Bordures dans les filtres*/
-    display: flex;
-    align-items:center;
-    margin-bottom: 10px;
+      display: flex;
+      justify-content: flex-start;
+      font-size: 20px;
+      margin-bottom: 10px;
+      height: 50px;
+      width: 235px;
+    }
+    .title3{
+      font-size: x-large;
+      margin-left: 25px;
     }
     .subtittle{
       font-size: 22px;
@@ -850,27 +981,78 @@ h6{
     }
     .activities{  
       flex-direction: column;
+      margin-left: 10px;
     }
     .blocfooter{
       flex-direction: column;
     }
     .stickers{
       width: 95%;
+      margin-left: 10px;
    }
     .stickers2{
       width: 95%;
    }
     .littlesticker{
       width: 98%;
-      style: 120px;
+      height: 170px;
+    }
+    .txt{
+      margin-left: 20px;
+    }
+    .littlesticker2{
+      height: 125px;
+      width: 30%;
+    }
+    .txt2{
+      margin-left: 20px;
     }
     h4{
       font-size: 22px;
     }
     p{
       font-size: 18px;
+      margin-bottom: 8px;
+    }
+    h5{
+      font-size: 20px;
     }
     .iconstar{
       font-size : 15px;
+    }
+    .vieuxport{
+      height: 170px;
+      width: 98%;
+    }
+    .up11{
+      display: block;
+      margin-bottom: auto;
+    }
+    .fort{
+      height: 170px;
+      width: 98%;
+    }
+    .frioul{
+      height: 170px;
+      width: 98%;
+    }
+    .calanques{
+      height: 170px;
+      width: 98%;
+    }
+    .lagarde{
+      height: 170px;
+      width: 98%;
+    }
+    .longchamp{
+      height: 170px;
+      width: 98%;
+    }
+    .up2{
+      display: block;
+    }
+    .up21{
+      display: block;
+      margin-bottom: auto;
     }
 }
