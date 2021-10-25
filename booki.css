@@ -356,7 +356,7 @@
 }
 body
 {
-    font-family: 'Raleway' !important;
+    font-family: 'Raleway';
 }
             /*header*/
 header{
@@ -406,8 +406,6 @@ a{
     text-align: center;
     text-decoration: none;
     font-size: 10px;
-    font-weight: normal;
-    font-family: "Raleway";
     border-radius: 2px;
 }
 .button2{
@@ -419,9 +417,11 @@ a{
 h1{
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 15px;
     margin-right: 40px;
+    margin-top: 25px;
+    font-weight: bold;
 }
 h2{
     text-decoration: none;
@@ -457,7 +457,7 @@ h2{
     border-color: #F2F2F2;
     height: 26px;
     width: 180px;
-    text-align: center;
+    padding-left: 10px;
     line-height: 25px;
     font-weight: bold;
     font-size: 11px;
@@ -524,6 +524,7 @@ h2{
     flex-direction: row;
     justify-content: normal;
     margin-left: 5px;
+    margin-top: 10px;
 }
 .subtittle{ /*texte*/
     display: flex;
@@ -561,7 +562,7 @@ h2{
 }
 .hebergements{
   background-color: whitesmoke;
-  width: 75%;
+  width: 65%;
   margin-right: 30px;
   margin-left: 10px;
   border-radius: 8px;
@@ -577,18 +578,20 @@ h2{
 .stickers{
   background-color: white;
   border-radius: 10px 10px 10px 10px;
-  width: 30%;
-  margin-top: 15px;
+  width: 210px;
+  margin-top: 5px;
+  overflow: hidden;
 }
 .littlesticker{
   height: 90px;
-  width: 95%;
+  width: 200px;
   margin-left: 5px;
   margin-top: 2px;
   border-radius: 15px 15px 0px 0px;
 }
 h4{
-  font-size: 12px;
+  font-family: 'Raleway';
+  font-size: 15px;
   font-weight: bold;
   margin-left: 8px;
   margin-top: 0px;
@@ -598,7 +601,7 @@ p{
   font-size: 11px;
   margin-left: 8px;
   margin-top: 2px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 .iconstar{
   font-size: 8px;
@@ -625,13 +628,14 @@ h5{
   display: flex;
   background-color: white;
   border-radius: 10px 10px 10px 10px;
-  width: 90%;
+  width: 87%;
   margin-top: 15px;
   margin-bottom: 10px;
   margin-left: 10px;
+  overflow: hidden;
 }
 .littlesticker2{
-  width: 35%;
+  width: 90px;
   height: 90px;
   margin-left: 2.5px;
   margin-top: 2px;
@@ -644,7 +648,7 @@ h5{
   flex-wrap: wrap;
   background-color:whitesmoke;
   width: 30%;
-  margin-right: 10px;
+  margin-right: 40px;
   border-radius: 8px;
 }
 .txt2{/*fond du texte*/
@@ -687,8 +691,10 @@ h5{
   margin-top: 5px;
   margin-bottom: 5px;
   padding-bottom: 20px;
-  margin-right: 35px;
+  margin-right: 15px;
   width: 100%;
+  height: 95%;
+  overflow: hidden;
 }
 .vieuxport{
   margin-left: 5px;
@@ -698,6 +704,9 @@ h5{
   display: flex;
   height: 96%;
   width: 97%;
+}
+.vieuxport2{
+  display: none;
 }
 .fort{
   margin-left: 5px;
@@ -724,6 +733,9 @@ h5{
   height: 96%;
   width: 97%;
 }
+.calanques2{
+  display:none
+}
 .lagarde{
   display: flex;
   margin-left: 5px;
@@ -746,7 +758,7 @@ h5{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 98%;
+  height: 95%;
 }
 .up11{
   display: flex;
@@ -762,7 +774,7 @@ h5{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 98%;
+  height: 95%;
 }
 .up21{
   display: flex;
@@ -787,14 +799,13 @@ h6{
   flex-direction: row;
   margin-top: 20px;
   background-color: #f2f2f2;
-  
 }
 .first{
   display: flex;
   flex-direction: column;
   width: auto;
-  margin-right: 220px;
   margin-bottom: 18px;
+  margin-right: 150px;
 }
 .tittlefoot1{
   margin-left: 27px;
@@ -806,8 +817,8 @@ h6{
 .second{
   display: flex;
   flex-direction: column;
-  margin-right: 220px;
   margin-bottom: 18px;
+  margin-right: 150px;
 }
 .tittlefoot2{
   margin-left: 27px;
@@ -819,7 +830,6 @@ h6{
 .third{
   display: flex;
   flex-direction: column;
-  margin-right: 220px;
   margin-bottom: 18px;
 }
 .tittlefoot3{
@@ -1028,6 +1038,10 @@ h6{
       margin-top: 15px;
     }
     .vieuxport{
+      display: none;
+    }
+    .vieuxport2{
+      display:flex;
       height: 170px;
       width: 98%;
     }
@@ -1040,6 +1054,10 @@ h6{
       width: 98%;
     }
     .calanques{
+      display: none;
+    }
+    .calanques2{
+      display: flex;
       height: 170px;
       width: 98%;
     }
