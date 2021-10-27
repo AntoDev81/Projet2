@@ -579,14 +579,14 @@ h2{
 .stickers{
   background-color: white;
   border-radius: 10px 10px 10px 10px;
-  width: 250px;
+  width: 300px;
   margin-top: 5px;
   margin-bottom: 10px;
   overflow: hidden;
 }
 .littlesticker{
   height: 90px;
-  width: 240px;
+  width: 290px;
   margin-left: 5px;
   margin-top: 2px;
   border-radius: 15px 15px 0px 0px;
@@ -844,6 +844,9 @@ h6{
     @media screen and (max-width: 992px) {
       .stickers{
         width: 200px;
+      }
+      h1{
+        font-size: 20px;
       }
   }    
     /*adaptation mobile*/
