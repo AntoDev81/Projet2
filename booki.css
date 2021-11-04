@@ -337,7 +337,7 @@ h5{
       /*Conteneur Activités*/
 .secondsection{
   display: flex;
-  height: 400px;
+  height: auto;
 }
 .titlesecondsection{
   margin-top: 20px;
@@ -429,12 +429,12 @@ h5{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 95%;
+  height: 102%;
 }
 .up11{
   display: flex;
   margin-bottom: 30px;
-  height: 55%;
+  height: 52%;
 }
 .up12{
   display: flex;
@@ -445,7 +445,7 @@ h5{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 95%;
+  height: 103%;
 }
 .up21{
   display: flex;
@@ -921,4 +921,10 @@ h6{
       margin-bottom: 30px;
       margin-left: 0px;
     }
+}
+@media screen and (min-width:1440px) {
+  body{
+    margin-right: 150px;
+    margin-left: 150px;
+  }
 }
